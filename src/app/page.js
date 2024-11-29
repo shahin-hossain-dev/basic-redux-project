@@ -1,15 +1,10 @@
 "use client";
 import Counter from "@/components/Counter/Counter";
 import Stats from "@/components/Stats/Stats";
-import Image from "next/image";
-import { useState } from "react";
+import { useSelector } from "react-redux";
 
-const initialCounters = [
-  { id: 1, value: 0 },
-  { id: 2, value: 0 },
-];
 export default function Home() {
-  const [counters, setCounters] = useState(initialCounters);
+  const counters = useSelector((state) => state.counters);
 
   const counterIncrement = (counterId) => {};
   const counterDecrement = (counterId) => {};
