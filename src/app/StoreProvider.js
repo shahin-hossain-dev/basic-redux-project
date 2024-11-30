@@ -7,3 +7,8 @@ const StoreProvider = ({ children }) => {
 };
 
 export default StoreProvider;
+
+/**
+ *  1. Crate a Store Provider component
+ *  3. set Provider pass props store
+ */

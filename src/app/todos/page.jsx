@@ -1,5 +1,6 @@
 "use client";
-import { fetchTodos } from "@/lib/features/todos/todosSlice";
+
+import { fetchTodos } from "@/lib/features/todos/todosAPI";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
