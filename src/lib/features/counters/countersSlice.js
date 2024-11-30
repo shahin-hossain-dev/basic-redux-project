@@ -6,14 +6,14 @@ const initialState = [
     value: 0,
   },
   {
-    id: 1,
+    id: 2,
     value: 0,
   },
 ];
 
 const counterSlice = createSlice({
   name: "counters",
-  initialState: initialState,
+  initialState,
   reducers: {
     increment: (state, action) => {
       const counterIndex = state.findIndex(
@@ -26,7 +26,7 @@ const counterSlice = createSlice({
       const counterIndex = state.findIndex(
         (counter) => counter.id === action.payload
       );
-      state[counterIndex].value + 1;
+      state[counterIndex].value--;
     },
   },
 });
